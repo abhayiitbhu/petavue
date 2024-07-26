@@ -161,12 +161,11 @@ curl -X POST "http://localhost:8000/process/" \
 {
   "user_query": "extract year, month, and day from date column 'date'"
 }
-```
 
-```json
 {
    "user_query": " find difference between datecolumns date and date2"
 }
+```
 
 ## Text Analysis
 
