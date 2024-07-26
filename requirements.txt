@@ -20,6 +20,7 @@ httpcore==1.0.5
 httptools==0.6.1
 httpx==0.27.0
 idna==3.7
+iniconfig==2.0.0
 itsdangerous==2.2.0
 Jinja2==3.1.4
 markdown-it-py==3.0.0
@@ -29,10 +30,14 @@ multidict==6.0.5
 numpy==2.0.1
 openai==0.28.0
 openpyxl==3.1.5
+packaging==24.1
 pandas==2.2.2
+pluggy==1.5.0
 pydantic==2.8.2
 pydantic_core==2.20.1
 Pygments==2.18.0
+pytest==8.3.2
+pytest-asyncio==0.23.8
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 python-multipart==0.0.9
