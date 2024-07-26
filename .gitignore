@@ -1,0 +1,4 @@
+.env
+venv/
+processed_data.xlsx
+processed_text_data.xlsx
