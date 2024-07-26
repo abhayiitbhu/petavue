@@ -11,8 +11,6 @@ This project provides an API for performing various data operations on Excel fil
 - [Usage](#usage)
   - [API Endpoints](#api-endpoints)
   - [Example Queries](#example-queries)
-- [Development](#development)
-- [Testing](#testing)
 - [Contributing](#contributing)
 - [License](#license)
 
