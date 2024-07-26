@@ -11,10 +11,8 @@ This project provides an API for performing various data operations on Excel fil
 - [Usage](#usage)
   - [API Endpoints](#api-endpoints)
   - [Example Queries](#example-queries)
-- [Development](#development)
 - [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -23,6 +21,8 @@ This project provides an API for performing various data operations on Excel fil
 - **Joining**: Perform inner, left, right, and outer joins with another dataset.
 - **Pivot and Unpivot**: Create pivot tables and unpivot them back to a normal dataset.
 - **Date Operations**: Extract year, month, and day from date columns and calculate the difference between dates.
+- **Text Analysis** Add additional columns by analyzing some text data (eg. feedback analysis (positive or negative), text summary of an account based on some attributes. )
+
 
 ## Setup
 
@@ -116,7 +116,7 @@ curl -X POST "http://localhost:8000/process/" \
 
 # Example Queries
 
-## Addition Operation
+### Addition Operation
 
 ```json
 {
@@ -124,21 +124,21 @@ curl -X POST "http://localhost:8000/process/" \
 }
 ```
 
-## Aggregation Operation
+### Aggregation Operation
 
 ```json
 {
   "user_query": "aggregate col_0"
 }
 ```
-## Join Operation
+### Join Operation
 
 ```json
 {
   "user_query": "outer join on column col_0"
 }
 ```
-## Pivot Operation
+### Pivot Operation
 
 ```json
 {
@@ -146,7 +146,7 @@ curl -X POST "http://localhost:8000/process/" \
 
 }
 ```
-## Unpivot Operation
+### Unpivot Operation
 
 ```json
 {
@@ -155,7 +155,7 @@ curl -X POST "http://localhost:8000/process/" \
 
 }
 ```
-## Date Operation
+### Date Operation
 
 ```json
 {
@@ -167,12 +167,19 @@ curl -X POST "http://localhost:8000/process/" \
 }
 ```
 
-## Text Analysis
+### Text Analysis
 
 ```json
 {
   "user_query": " Analyse the column 'text_col_0' in sheet UnstructuredData"
 }
+```
+## Testing
+
+ **Run tests:**
+
+```bash
+pytest
 ```
 
 
