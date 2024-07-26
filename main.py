@@ -153,45 +153,6 @@ def add_text_analysis(df, text_column):
     return df
 
 
-
-def extract_params(response: str) -> Dict[str, Optional[str]]:
-    """
-    Extracts parameters from the OpenAI API response text.
-
-    :param response: The response text from OpenAI containing parameters.
-    :return: A dictionary with parameter names and their values.
-    """
-
-    params = {
-        'operation': None,
-        'column1': None,
-        'column2': None,
-        'column': None,
-        'index': None,
-        'columns': None,
-        'values': None,
-        'id_vars': None,
-        'value_vars': None,
-        'date_column': None,
-        'date_column2': None,
-        'text_column': None,
-        'how': 'inner',
-        'sheet_name':None
-    }
-
-    try:
-        parsed_response = json.loads(response)
-        for key in params.keys():
-            if key in parsed_response:
-                params[key] = parsed_response[key]
-        if 'value_vars' in params and isinstance(params['value_vars'], str):
-            params['value_vars'] = [v.strip() for v in params['value_vars'].split(',')]
-    except json.JSONDecodeError as e:
-        logging.error(f"Error decoding JSON response: {str(e)}")
-        raise ValueError("Invalid JSON response from OpenAI API")
-    return params
-
-
 def extract_params(user_query: str):
     try:
         prompt = f'''
