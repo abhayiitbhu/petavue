@@ -21,7 +21,6 @@ This project provides an API for performing various data operations on Excel fil
 - **Joining**: Perform inner, left, right, and outer joins with another dataset.
 - **Pivot and Unpivot**: Create pivot tables and unpivot them back to a normal dataset.
 - **Date Operations**: Extract year, month, and day from date columns and calculate the difference between dates.
-- **Text Analysis** Add additional columns by analyzing some text data (eg. feedback analysis (positive or negative), text summary of an account based on some attributes. )
 
 
 ## Setup
@@ -167,13 +166,7 @@ curl -X POST "http://localhost:8000/process/" \
 }
 ```
 
-### Text Analysis
 
-```json
-{
-  "user_query": " Analyse the column 'text_col_0' in sheet UnstructuredData"
-}
-```
 ## Testing
 
  **Run tests:**
