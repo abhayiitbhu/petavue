@@ -22,6 +22,7 @@ This project provides an API for performing various data operations on Excel fil
 - **Pivot and Unpivot**: Create pivot tables and unpivot them back to a normal dataset.
 - **Date Operations**: Extract year, month, and day from date columns and calculate the difference between dates.
 
+- **Hosted Application** Currently the application is hosted on Railway.app. Open your browser and navigate to: [https://petavue-production.up.railway.app/docs](https://petavue-production.up.railway.app/docs) to access the Swagger UI and interactively test the API by supplying values.
 
 ## Setup
 
