@@ -111,7 +111,7 @@ curl -X POST "http://localhost:8000/process/" \
 -H "accept: application/json" \
 -H "Content-Type: multipart/form-data" \
 -F "file=@path_to_your_excel_file.xlsx" \
--F "user_query=add col_0 and col_2"
+-F "query=add col_0 and col_2"
 ```
 
 # Example Queries
