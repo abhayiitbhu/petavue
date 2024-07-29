@@ -128,7 +128,7 @@ curl -X POST "http://localhost:8000/process/" \
 
 ```json
 {
-  "user_query": "aggregate col_0"
+  "user_query": "aggregate col_0 and send its summary"
 }
 ```
 ### Join Operation
