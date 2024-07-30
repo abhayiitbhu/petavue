@@ -88,7 +88,7 @@ def generate_header(prompt):
     return header
 
 def main():
-    structured_header_prompt = "Generate a header row with at least 5 columns of numerical and categorical data. The columns should be related to some entity in the real world. Provide the header in list format only. No explanations or additional text."
+    structured_header_prompt = "Generate a header row with at least 10 columns of numerical and categorical data. The columns should be related to some entity in the real world. Provide the header in list format only. No explanations or additional text."
     unstructured_header_prompt = "Generate a header row with at least 5 columns of textual data. The columns should be related to some entity in the real world like product reviews, student feedback, etc. Provide the header in list format only. No explanations or additional text."
     h1= generate_header(structured_header_prompt)
     h2= generate_header(unstructured_header_prompt)
