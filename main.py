@@ -84,9 +84,11 @@ def execute_function(code: str, df1: pd.DataFrame,df2: pd.DataFrame, **kwargs):
             elif isinstance(result, pd.Series):
                 return result.to_frame().to_dict()
             elif isinstance(result,dict):
-                return result
+                    return {k: (v.item() if isinstance(v, np.generic) else v) for k, v in result.items()}
             elif isinstance(result, (int, float, str, bool)):
                 return {"result": result}
+            elif isinstance(result, (list, tuple)):
+                return pd.DataFrame(result).to_dict()
             elif isinstance(result, np.generic):
                 return {"result": result.item()}
             else:
